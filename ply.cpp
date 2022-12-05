@@ -27,6 +27,9 @@ Postcondition:
 ply::ply() {
 	vertexList = NULL;
 	faceList = NULL;
+	vertexArray = NULL;
+    indiciesArray = NULL;
+    normalsArray = NULL;
 	properties = 0;
 	faceCount = 0;
 	vertexCount = 0;
@@ -34,6 +37,9 @@ ply::ply() {
 	vertexVBO_id = -1;
 	indicesVBO_id = -1;
 	normalVBO_id = -1;
+	vertexArray = NULL;
+	indiciesArray = NULL;
+	normalsArray = NULL;
 }
 
 /*  ===============================================
@@ -44,6 +50,9 @@ Postcondition:
 ply::ply(string filePath) {
 	vertexList = NULL;
 	faceList = NULL;
+	vertexArray = NULL;
+	indiciesArray = NULL;
+	normalsArray = NULL;
 	faceCount = 0;
 	vertexCount = 0;
 	properties = 0;
@@ -51,6 +60,9 @@ ply::ply(string filePath) {
 	vertexVBO_id = -1;
 	indicesVBO_id = -1;
 	normalVBO_id = -1;
+	vertexList = NULL;
+	faceList = NULL;
+	vertexArray = NULL;
 	reload(filePath);
 }
 

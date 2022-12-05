@@ -1,4 +1,4 @@
-ASSIGN     = a5
+ASSIGN     = a5-demo
 BREWPATH   = $(shell brew --prefix)
 CXX        = $(shell fltk-config --cxx)
 CXXFLAGS   = $(shell fltk-config --cxxflags) -I$(BREWPATH)/include
